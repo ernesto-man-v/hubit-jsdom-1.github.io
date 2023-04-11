@@ -1,0 +1,48 @@
+#root {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+}
+
+.card-top {
+    flex: 1 1 auto;
+    text-align: center;
+    height: 20px;
+}
+
+.card-main {
+    flex: 7 1 auto;
+    margin: 5px 0 5px 0;
+    height: 200px;
+}
+
+.card-main__image {
+    width: 100%;
+    height: 100%;
+}
+
+.card-bottom {
+    flex: 5 1 auto;
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+}
+
+.card-bottom__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-bottom-description {
+    text-align: justify;
+    overflow-y: scroll;
+}
