@@ -1,15 +1,630 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>JSDOM KT-2</title>
-</head>
-<body>
-    <div id="root">
+<html class="" lang="en"><head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <title>SEM - 2: HTML/CSS</title>
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+ </head>
+ <body class="">
+    <div class="js-preloader preloader" style="display: none;"></div>
+    <header class="panel js-panel" style="display: none;">
+       <div class="container--panel uk-container uk-height-1-1">
+          <div class="uk-flex uk-flex-middle uk-height-1-1 uk-grid uk-grid-stack" data-uk-grid="">
+             <div class="uk-width-1-3 uk-width-1-6@m uk-first-column">
+                <h3 style="color:green">природиус</h3>
+             </div>
+             <div class="uk-width-2-3 uk-visible@m">
+                <ul class="nav nav--panel js-scrollspy-nav uk-flex uk-flex-wrap">
+                   <li class=""><a href="#about_us">О нас</a></li>
+                   <li class=""><a href="#music">Музыка</a></li>
+                   <li class=""><a href="#video">Видео</a></li>
+                   
+                   <li class=""><a href="#news">Новости</a></li>
+                   <li class="uk-active"><a href="#contacts">Контакты</a></li>
+                </ul>
+             </div>
+             <div class="uk-width-1-3 uk-width-1-6@m">
+                <div class="panel__player">
+                   <div id="mejs_42240387951484004">
+                      <div id="mejs_42240387951484004_html5"><div id="mejs_42240387951484004_html5_html5"><div id="mejs_42240387951484004_html5_html5_html5"><div id="mejs_42240387951484004_html5_html5_html5_html5"><div id="mejs_42240387951484004_html5_html5_html5_html5_html5"><audio class="js-audio" preload="metadata" src="file:///Users/ernesto/projects/ithub-study/sem-3/HTML:CSS/site/media/audio/heavy-rain-daniel_simon.mp3" style="" id="mejs_42240387951484004_html5_html5_html5_html5_html5_html5" tabindex="-1"></audio></div></div></div></div></div>
+                   </div>
+                   <button type="button" class="icon icon--play-pause js-panel-play icon--play"></button> 
+                   <a class="mejs__horizontal-volume-slider js-panel-volume">
+                      <div class="mejs__horizontal-volume-total">
+                         <div class="mejs__horizontal-volume-current"></div>
+                      </div>
+                   </a>
+                </div>
+             </div>
+             <div class="uk-width-1-3 uk-hidden@m uk-text-right"><a href="#" data-uk-toggle="target: #offcanvas-nav" aria-expanded="false">Menu</a></div>
+          </div>
+       </div>
+    </header>
+    <div id="offcanvas-nav" data-uk-offcanvas="flip: true; mode: push; overlay: true" class="uk-offcanvas">
+       <div class="uk-offcanvas-bar">
+          <button class="modal__close uk-offcanvas-close uk-icon uk-close" type="button" data-uk-close="">
+             <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                <line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="13" y2="13"></line>
+                <line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1" y2="13"></line>
+             </svg>
+          </button>
+          <ul class="nav nav--offcanvas js-scrollspy-nav js-offcanvas-nav uk-flex">
+             <li><a href="#about_us">О нас</a></li>
+             <li><a href="#music">Музыка</a></li>
+             <li><a href="#video">Видео</a></li>
+             <li><a href="#news">Новости</a></li>
+             <li><a href="#contacts">Контакты</a></li>
+          </ul>
+       </div>
     </div>
-    <script src="index.js"></script>
-</body>
-</html>
+    <section class="intro uk-margin-large-bottom">
+       <div class="uk-container uk-container-large">
+          <div class="uk-grid-collapse uk-grid" data-uk-grid="">
+             <div class="intro__sidebar uk-width-1-4@m uk-visible@m uk-position-relative uk-first-column">
+                <div class="logo logo--intro"><h3 style="color:green">природиус</h3></div>
+                <ul class="nav nav--intro uk-list js-scrollspy-nav">
+                   <li class=""><a href="#about_us">О нас</a></li>
+                   <li class=""><a href="#music">Музыка</a></li>
+                   <li class=""><a href="#video">Видео</a></li>
+                   <li class=""><a href="#news">Новости</a></li>
+                   <li class="uk-active"><a href="#contacts">Контакты</a></li>
+                </ul>
+                <div class="social__wrapper">
+                   <div class="social social--intro">
+                      
+                      
+                   </div>
+                </div>
+             </div>
+             <div class="uk-width-3-4@m">
+                <div class="slider slider--intro uk-position-relative uk-slideshow" data-uk-slideshow="animation: push">
+                   <ul class="slider__items uk-slideshow-items" style="min-height: 421.875px;">
+                      <li tabindex="-1" class="uk-active uk-transition-active" style="">
+                         <div class="slider__screen">
+                            <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center"><img class="slider__image" src="01.jpg" alt="" data-uk-cover="" style="height: 560px; width: 854px;"></div>
+                            <div class="slider__inner uk-position-top">
+                               <div data-uk-slideshow-parallax="scale: 1,1,0.8" style="transform: scale(1);" class="">
+                                  <h2 class="intro__title"><span class="js-intro-title uk-hidden">Released a new live album, now available on iTunes</span><span>Released</span><span>a</span><span>new</span><span>live</span><span>album,</span><span>now</span><span>available</span><span>on</span><span>iTunes</span><span>Released</span><span>a</span><span>new</span><span>live</span><span>album,</span><span>now</span><span>available</span><span>on</span><span>iTunes</span><span>Released</span><span>a</span><span>new</span><span>live</span><span>album,</span><span>now</span><span>available</span><span>on</span><span>iTunes</span><span>Released</span><span>a</span><span>new</span><span>live</span><span>album,</span><span>now</span><span>available</span><span>on</span><span>iTunes</span><span>Released</span><span>a</span><span>new</span><span>live</span><span>album,</span><span>now</span><span>available</span><span>on</span><span>iTunes</span><span>Released</span><span>a</span><span>new</span><span>live</span><span>album,</span><span>now</span><span>available</span><span>on</span><span>iTunes</span></h2>
+                                  <p><a class="btn btn--more" href="#article-1" data-uk-toggle="" aria-expanded="false">Далее <span class="icon icon--dots"></span></a></p>
+                               </div>
+                            </div>
+                         </div>
+                      </li>
+                      <li tabindex="-1" class="" style="">
+                         <div class="slider__screen">
+                            <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center"><img class="slider__image" src="02_002.jpg" alt="" data-uk-cover="" style="height: 560px; width: 840px;"></div>
+                            <div class="slider__inner uk-position-top">
+                               <div data-uk-slideshow-parallax="scale: 1,1,0.8" style="transform: scale(1);" class="">
+                                  <h2 class="intro__title"><span class="js-intro-title uk-hidden">The rescheduling of the tour</span><span>The</span><span>rescheduling</span><span>of</span><span>the</span><span>tour</span><span>The</span><span>rescheduling</span><span>of</span><span>the</span><span>tour</span><span>The</span><span>rescheduling</span><span>of</span><span>the</span><span>tour</span><span>The</span><span>rescheduling</span><span>of</span><span>the</span><span>tour</span><span>The</span><span>rescheduling</span><span>of</span><span>the</span><span>tour</span><span>The</span><span>rescheduling</span><span>of</span><span>the</span><span>tour</span></h2>
+                                  <p><a class="btn btn--more">Далее <span class="icon icon--dots"></span></a></p>
+                               </div>
+                            </div>
+                         </div>
+                      </li>
+                      <li tabindex="-1" class="" style="">
+                         <div class="slider__screen">
+                            <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center"><img class="slider__image" src="03.jpg" alt="" data-uk-cover="" style="height: 560px; width: 845px;"></div>
+                            <div class="slider__inner uk-position-top">
+                               <div data-uk-slideshow-parallax="scale: 1,1,0.8" style="transform: scale(1);" class="">
+                                  <h2 class="intro__title"><span class="js-intro-title uk-hidden">Now we are on instagram</span><span>Now</span><span>we</span><span>are</span><span>on</span><span>instagram</span><span>Now</span><span>we</span><span>are</span><span>on</span><span>instagram</span><span>Now</span><span>we</span><span>are</span><span>on</span><span>instagram</span><span>Now</span><span>we</span><span>are</span><span>on</span><span>instagram</span><span>Now</span><span>we</span><span>are</span><span>on</span><span>instagram</span><span>Now</span><span>we</span><span>are</span><span>on</span><span>instagram</span></h2>
+                                  
+                               </div>
+                            </div>
+                         </div>
+                      </li>
+                   </ul>
+                   <a class="slider__control uk-icon uk-slidenav-next uk-slidenav" href="#" data-uk-slidenav-next="" data-uk-slideshow-item="next">
+                      <svg width="14" height="24" viewBox="0 0 14 24" xmlns="http://www.w3.org/2000/svg">
+                         <polyline fill="none" stroke="#000" stroke-width="1.4" points="1.225,23 12.775,12 1.225,1 "></polyline>
+                      </svg>
+                   </a>
+                   <ul class="js-slider-intro-nav uk-slideshow-nav uk-dotnav uk-flex-column uk-flex-center">
+                      <li uk-slideshow-item="0" class="uk-active"><a href=""></a></li>
+                      <li uk-slideshow-item="1" class=""><a href=""></a></li>
+                      <li uk-slideshow-item="2" class=""><a href=""></a></li>
+                   </ul>
+                </div>
+
+             </div>
+          </div>
+       </div>
+    </section>
+    <section id="about_us" class="about uk-section uk-scrollspy-inview " data-uk-scrollspy="cls:uk-animation-fade; offset-top: 80px; delay: 300" style="">
+       <div class="uk-container uk-container-large">
+          <div class="about__grid uk-grid-collapse uk-flex uk-grid" data-uk-grid="">
+             <div class="uk-width-1-2@s">
+                <div class="about__info">
+                   <h2 class="uk-h2">О нас</h2>
+                   <p>A
+                      wonderful serenity has taken possession of my entire soul, like these 
+                      sweet mornings of spring which I enjoy with my whole heart. I am alone, 
+                      and feel the charm of existence in this spot, which was created for the 
+                      bliss of souls like mine. I am so happy, my dear friend, so absorbed in 
+                      the exquisite sense of mere tranquil existence, that I neglect my 
+                      talents.
+                   </p>
+                   <p>I should be incapable of drawing a single stroke at the 
+                      present moment; and yet I feel that I never was a greater artist than 
+                      now.
+                   </p>
+                </div>
+             </div>
+             <div class="uk-width-1-2@s uk-flex-first@s uk-first-column"></div>
+          </div>
+       </div>
+    </section>
+    
+    <section id="music" class="music uk-section uk-scrollspy-inview " data-uk-scrollspy="cls:uk-animation-fade; offset-top: 80px; delay: 300" style="">
+       <div class="container--min uk-container">
+          <h2 class="uk-h2">Музыка</h2>
+          <div class="uk-child-width-1-1 uk-child-width-1-2@m uk-grid uk-grid-stack" data-uk-grid="">
+             
+             <div class="playlist__wrap uk-first-column">
+                <div class="uk-switcher" style="touch-action: pan-y pinch-zoom;">
+                   <div class="playlist bg-dark--1 uk-active">
+                      <div class="albums albums--playlist albums__item">
+                         <div class="albums__cover"><img src="img/albums/01.jpg" data-src="img/albums/01.jpg" alt="" data-uk-img=""></div>
+                         <div class="album__details"><span class="albums__title">Звуки природы</span> <span class="albums__year">2018</span></div>
+                         <div class="albums__buy uk-visible@s">
+                            
+                            
+                         </div>
+                      </div>
+                      <ul class="js-audio-items tracks list--striped">
+                         <li class="list__item" data-audio="media/audio/heavy-rain-daniel_simon.mp3">
+                            <button type="button" class="icon icon--play-pause js-audio-play icon--play"></button> <span class="tracks__title">Звук дождя</span> <span class="js-audio-time tracks__time"></span> 
+                            <a class="mejs__horizontal-volume-slider js-panel-volume">
+                               <div class="mejs__horizontal-volume-total">
+                                  <div class="mejs__horizontal-volume-current"></div>
+                               </div>
+                            </a>
+                         </li>
+                         <li class="list__item" data-audio="media/audio/birds.wav">
+                            <button type="button" class="icon icon--play-pause js-audio-play icon--play"></button> <span class="tracks__title">Пение птиц</span> <span class="js-audio-time tracks__time"></span> 
+                            <a class="mejs__horizontal-volume-slider js-audio-volume">
+                               <div class="mejs__horizontal-volume-total">
+                                  <div class="mejs__horizontal-volume-current"></div>
+                               </div>
+                            </a>
+                         </li>
+                         <li class="list__item list__item--active" data-audio="media/audio/strong-wind.wav">
+                            <button type="button" class="icon icon--play-pause js-audio-play icon--play"></button> <span class="tracks__title">Сильный ветер</span> <span class="js-audio-time tracks__time">00:01</span> 
+                            <a class="mejs__horizontal-volume-slider js-audio-volume">
+                               <div class="mejs__horizontal-volume-total">
+                                  <div class="mejs__horizontal-volume-current"></div>
+                               </div>
+                            </a>
+                         </li>
+                         
+                         
+                      </ul>
+                   </div>
+                   
+          
+                </div>
+             </div>
+          </div>
+       </div>
+    </section>
+    <svg class="tracks__volume_mask">
+       <defs>
+          <clipPath id="volumeClipMask">
+             <path d="M7 27.605H4v-7.5h3v7.5zm20 0h-3v-25h3v25zm-10 0h-3v-16.25h3v16.25zm-5.167 0h-3V15.876h3v11.729zm10 0h-3V7.126h3v20.479z" fill="#FFF"></path>
+          </clipPath>
+       </defs>
+    </svg>
+    <section id="video" class="video uk-section uk-scrollspy-inview " data-uk-scrollspy="cls:uk-animation-fade; offset-top: 80px; delay: 300" style="">
+       <div class="container--min uk-container uk-margin-large-bottom">
+          <h2 class="uk-h2">Видео</h2>
+       </div>
+       <div class="js-video-slider container--special uk-container uk-container-large uk-position-relative uk-slider uk-slider-container" tabindex="-1" data-uk-slider="finite: true">
+          <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-5@l" style="transform: translate3d(0px, 0px, 0px);">
+
+          <li class="video__column uk-active" tabindex="-1"><a href="#" data-video-src="media/video/road.mp4" data-video-type="video/mp4" class="js-video-target video__placeholder uk-background-cover" data-src="img/video/02.png" title="Горная дорога" data-uk-img="" style="background-image: url(&quot;img/video/02.png&quot;);"><span class="video__title">Природа</span> <span class="video__link icon icon--play"></span> </a></li></ul>
+          <a class="slider__control uk-position-center-left uk-icon uk-slidenav-previous uk-slidenav uk-invisible" href="#" data-uk-slidenav-previous="" data-uk-slider-item="previous" style="left: 0px;" hidden="">
+             <svg width="14" height="24" viewBox="0 0 14 24" xmlns="http://www.w3.org/2000/svg">
+                <polyline fill="none" stroke="#000" stroke-width="1.4" points="12.775,1 1.225,12 12.775,23 "></polyline>
+             </svg>
+          </a>
+          <a class="slider__control uk-position-center-right uk-icon uk-slidenav-next uk-slidenav uk-invisible" href="#" data-uk-slidenav-next="" data-uk-slider-item="next" style="right: 0px;" hidden="">
+             <svg width="14" height="24" viewBox="0 0 14 24" xmlns="http://www.w3.org/2000/svg">
+                <polyline fill="none" stroke="#000" stroke-width="1.4" points="1.225,23 12.775,12 1.225,1 "></polyline>
+             </svg>
+          </a>
+       </div>
+    </section>
+    
+    <section id="news" class="news uk-section uk-scrollspy-inview " data-uk-scrollspy="cls:uk-animation-fade; offset-top: 80px; delay: 300" style="">
+       <div class="container--min uk-container uk-margin-large-bottom">
+          <h2 class="uk-h2">Новости</h2>
+       </div>
+       <div class="container--special uk-container uk-container-large">
+          <div class="slider slider--news uk-position-relative uk-slider uk-slider-container" tabindex="-1" data-uk-slider="finite: true">
+             <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-child-width-1-5@xl uk-grid" data-uk-grid="" style="transform: translate3d(-480px, 0px, 0px);">
+                <li tabindex="-1" class="uk-first-column">
+                   <div class="uk-card">
+                      <div class="uk-card-media-top"><a href="#" data-uk-toggle="target: #article-0" class="cover__photo uk-background-cover uk-transition-toggle" data-src="img/news/01.jpg" data-uk-img="" style="background-image: url(&quot;file:///Users/ernesto/projects/ithub-study/sem-3/HTML:CSS/site/img/news/01.jpg&quot;);" aria-expanded="false"><span class="cover__link boxshadow icon icon--dots uk-transition-scale-up"></span></a></div>
+                      <div class="uk-card-body">
+                         <h3 class="news__title">I should be incapable of drawing a single stroke</h3>
+                         <div class="uk-flex uk-flex-middle uk-flex-between">
+                            <div class="events__date uk-width-auto"><span class="events__day">20</span> <span class="events__month">сен</span> <span class="events__year">2021</span></div>
+                            <a href="#" data-uk-toggle="target: #article-0" class="news__more btn btn--more" aria-expanded="false">Далее<span class="icon icon--dots"></span></a>
+                         </div>
+                      </div>
+                   </div>
+                </li>
+                <li tabindex="-1" class="uk-active">
+                   <div class="uk-card">
+                      <div class="uk-card-media-top"><a href="#" data-uk-toggle="target: #article-1" class="cover__photo uk-background-cover uk-transition-toggle" data-src="img/news/02.jpg" data-uk-img="" style="background-image: url(&quot;file:///Users/ernesto/projects/ithub-study/sem-3/HTML:CSS/site/img/news/02.jpg&quot;);" aria-expanded="false"><span class="cover__link boxshadow icon icon--dots uk-transition-scale-up"></span></a></div>
+                      <div class="uk-card-body">
+                         <h3 class="news__title">Released a new live album, now awailable on iTunes</h3>
+                         <div class="uk-flex uk-flex-middle uk-flex-between">
+                            <div class="events__date uk-width-auto"><span class="events__day">09</span> <span class="events__month">сен</span> <span class="events__year">2021</span></div>
+                            <a href="#" data-uk-toggle="target: #article-1" class="news__more btn btn--more" aria-expanded="false">Далее<span class="icon icon--dots"></span></a>
+                         </div>
+                      </div>
+                   </div>
+                </li>
+                <li tabindex="-1" class="uk-active">
+                   <div class="uk-card">
+                      <div class="uk-card-media-top"><a href="#" data-uk-toggle="target: #article-2" class="cover__photo uk-background-cover uk-transition-toggle" data-src="img/news/03.webp" data-uk-img="" style="background-image: url(&quot;file:///Users/ernesto/projects/ithub-study/sem-3/HTML:CSS/site/img/news/03.webp&quot;);" aria-expanded="false"><span class="cover__link boxshadow icon icon--dots uk-transition-scale-up"></span></a></div>
+                      <div class="uk-card-body">
+                         <h3 class="news__title">I am alone, and feel the charm of existence in this spot</h3>
+                         <div class="uk-flex uk-flex-middle uk-flex-between">
+                            <div class="events__date uk-width-auto"><span class="events__day">31</span> <span class="events__month">июль</span> <span class="events__year">2021</span></div>
+                            <a href="#" data-uk-toggle="target: #article-2" class="news__more btn btn--more" aria-expanded="false">Далее<span class="icon icon--dots"></span></a>
+                         </div>
+                      </div>
+                   </div>
+                </li>
+                <li tabindex="-1" class="">
+                   <div class="uk-card">
+                      <div class="uk-card-media-top"><a href="#" data-uk-toggle="target: #article-0" class="cover__photo uk-background-cover uk-transition-toggle" data-src="img/news/04.jpg" data-uk-img="" aria-expanded="false" style="background-image: url(&quot;file:///Users/ernesto/projects/ithub-study/sem-3/HTML:CSS/site/img/news/04.jpg&quot;);"><span class="cover__link boxshadow icon icon--dots uk-transition-scale-up"></span></a></div>
+                      <div class="uk-card-body">
+                         <h3 class="news__title">A wonderful serenity has taken possession of my entire soul</h3>
+                         <div class="uk-flex uk-flex-middle uk-flex-between">
+                            <div class="events__date uk-width-auto"><span class="events__day">12</span> <span class="events__month">июнь</span> <span class="events__year">2021</span></div>
+                            <a href="#" data-uk-toggle="target: #article-0" class="news__more btn btn--more" aria-expanded="false">Далее<span class="icon icon--dots"></span></a>
+                         </div>
+                      </div>
+                   </div>
+                </li>
+                
+                <li tabindex="-1" class="">
+                   <div class="uk-card">
+                      <div class="uk-card-media-top"><a href="#" data-uk-toggle="target: #article-2" class="cover__photo uk-background-cover uk-transition-toggle" data-src="img/news/01.jpg" data-uk-img="" style="background-image: url(&quot;file:///Users/ernesto/projects/ithub-study/sem-3/HTML:CSS/site/img/news/01.jpg&quot;);" aria-expanded="false"><span class="cover__link boxshadow icon icon--dots uk-transition-scale-up"></span></a></div>
+                      <div class="uk-card-body">
+                         <h3 class="news__title">I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents</h3>
+                         <div class="uk-flex uk-flex-middle uk-flex-between">
+                            <div class="events__date uk-width-auto"><span class="events__day">31</span> <span class="events__month">май</span> <span class="events__year">2021</span></div>
+                            <a href="#" data-uk-toggle="target: #article-2" class="news__more btn btn--more" aria-expanded="false">Далее<span class="icon icon--dots"></span></a>
+                         </div>
+                      </div>
+                   </div>
+                </li>
+                <li tabindex="-1" class="">
+                   <div class="uk-card">
+                      <div class="uk-card-media-top"><a href="#" data-uk-toggle="target: #article-0" class="cover__photo uk-background-cover uk-transition-toggle" data-src="img/news/02.jpg" data-uk-img="" style="background-image: url(&quot;file:///Users/ernesto/projects/ithub-study/sem-3/HTML:CSS/site/img/news/02.jpg&quot;);" aria-expanded="false"><span class="cover__link boxshadow icon icon--dots uk-transition-scale-up"></span></a></div>
+                      <div class="uk-card-body">
+                         <h3 class="news__title">Released a new live album, now awailable on iTunes</h3>
+                         <div class="uk-flex uk-flex-middle uk-flex-between">
+                            <div class="events__date uk-width-auto"><span class="events__day">28</span> <span class="events__month">апр</span> <span class="events__year">2021</span></div>
+                            <a href="#" data-uk-toggle="target: #article-0" class="news__more btn btn--more" aria-expanded="false">Далее<span class="icon icon--dots"></span></a>
+                         </div>
+                      </div>
+                   </div>
+                </li>
+             </ul>
+             <a class="slider__control uk-position-center-left uk-icon uk-slidenav-previous uk-slidenav" href="#" data-uk-slidenav-previous="" data-uk-slider-item="previous" style="left: 0px;">
+                <svg width="14" height="24" viewBox="0 0 14 24" xmlns="http://www.w3.org/2000/svg">
+                   <polyline fill="none" stroke="#000" stroke-width="1.4" points="12.775,1 1.225,12 12.775,23 "></polyline>
+                </svg>
+             </a>
+             <a class="slider__control uk-position-center-right uk-icon uk-slidenav-next uk-slidenav" href="#" data-uk-slidenav-next="" data-uk-slider-item="next" style="right: 0px;">
+                <svg width="14" height="24" viewBox="0 0 14 24" xmlns="http://www.w3.org/2000/svg">
+                   <polyline fill="none" stroke="#000" stroke-width="1.4" points="1.225,23 12.775,12 1.225,1 "></polyline>
+                </svg>
+             </a>
+          </div>
+       </div>
+    </section>
+    <section id="contacts" class="contacts uk-section uk-scrollspy-inview " data-uk-scrollspy="cls:uk-animation-fade; offset-top: 80px; delay: 300" style="">
+       <div class="container--min uk-container">
+          <h2 class="uk-h2">Контакты</h2>
+          <div data-uk-grid="" class="uk-grid uk-grid-stack">
+             <div class="uk-width-1-3@m uk-first-column">
+                
+                <div data-uk-grid="" class="uk-grid uk-grid-stack">
+                   <p class="contacts__info uk-width-1-1 uk-width-1-2@s uk-width-1-1@m uk-first-column"><strong class="contacts__subtitle">Позвоните нам:</strong><br><a href="tel:+999999999999">(9999) 999-999-99</a><br><a href="tel:+888888888888">(8888) 888-888-88</a></p>
+                   <p class="contacts__info uk-width-1-1 uk-width-1-2@s uk-width-1-1@m uk-grid-margin uk-first-column"><strong class="contacts__subtitle">E-mail:</strong><br><a href="mailto:info@yourdomain.com">info@yourdomain.com</a><br><a href="mailto:support@yourdomain.com">support@yourdomain.com</a></p>
+                </div>
+             </div>
+             <div class="uk-width-2-3@m uk-grid-margin uk-first-column">
+                <div class="uk-card bg-dark--1">
+                   <div class="contacts__form uk-card-body">
+                      <h3 class="uk-h3">Напишите нам</h3>
+                      <form class="js-form uk-grid" data-uk-grid="">
+                         <div class="uk-width-1-2@s uk-first-column"><input name="name" class="uk-input" type="text" placeholder="Имя"></div>
+                         <div class="uk-width-1-2@s"><input name="email" class="uk-input" type="email" placeholder="E-mail*" data-require="true"></div>
+                         <div class="uk-width-1-1 uk-grid-margin uk-first-column"><textarea name="message" class="uk-textarea" rows="5" data-require="true" placeholder="Сообщение*"></textarea></div>
+                         <div class="uk-width-1-1 uk-text-center uk-grid-margin uk-first-column">
+                            <p class="form__respond js-respond"></p>
+                            <input class="btn" type="submit" value="Отправить">
+                         </div>
+                      </form>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+    </section>
+    <footer class="footer bg-dark--1 uk-section uk-section-small">
+       <div class="container--min uk-container">
+          <div class="uk-flex uk-flex-between uk-child-width-auto uk-grid" data-uk-grid="">
+             <ul class="nav nav--footer js-scrollspy-nav uk-flex uk-flex-wrap uk-first-column">
+                <li class=""><a href="#about_us">О нас</a></li>
+                <li class=""><a href="#music">Музыка</a></li>
+                <li class=""><a href="#video">Видео</a></li>
+                <li class=""><a href="#news">Новости</a></li>
+                <li class="uk-active"><a href="#contacts">Контакты</a></li>
+             </ul>
+             <ul class="nav nav--footer uk-flex uk-flex-wrap">
+                
+                <li><a href="#" data-uk-toggle="target: #modal-text" aria-expanded="false">Политика конфиденциальности</a></li>
+             </ul>
+          </div>
+          
+          <p class="footer__copyrights">©2024 Природиус. Все права защищены</p>
+       </div>
+       <a href="#" class="footer__totop uk-icon uk-totop" data-uk-totop="" data-uk-scroll="">
+          <svg width="18" height="10" viewBox="0 0 18 10" xmlns="http://www.w3.org/2000/svg">
+             <polyline fill="none" stroke="#000" stroke-width="1.2" points="1 9 9 1 17 9 "></polyline>
+          </svg>
+       </a>
+    </footer>
+    
+    <div id="modal-video" data-uk-modal="" class="uk-modal" tabindex="-1">
+       <div class="modal__video uk-modal-dialog uk-margin-auto-vertical">
+          <button class="modal__close uk-modal-close-outside uk-icon uk-close" type="button" data-uk-close="">
+             <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                <line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="13" y2="13"></line>
+                <line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1" y2="13"></line>
+             </svg>
+          </button>
+          <span class="mejs__offscreen">Видео Player</span>
+       <span class="mejs__offscreen">Видео Player</span><span class="mejs__offscreen">Video Player</span></div>
+    </div>
+    <div id="article-0" class="js-modal-article uk-modal" data-uk-modal="" tabindex="-1">
+       <div class="modal modal__article uk-modal-dialog uk-margin-auto-vertical">
+          <button class="modal__close uk-modal-close-outside uk-icon uk-close" type="button" data-uk-close="">
+             <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                <line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="13" y2="13"></line>
+                <line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1" y2="13"></line>
+             </svg>
+          </button>
+          <div class="modal__article_grid uk-grid-collapse uk-child-width-1-2@m uk-flex-middle uk-grid uk-grid-stack" data-uk-grid="">
+             <div class="cover__photo--1-2 uk-background-cover uk-visible@m uk-first-column" data-src="img/slider/01.jpg" data-uk-img=""></div>
+             <div class="modal__article_text">
+                <div class="modal__overflow">
+                   <h2 class="uk-h3">Everything travelling set how law literature</h2>
+                   <p>Him
+                      boisterous invitation dispatched had connection inhabiting projection. 
+                      By mutual an mr danger garret edward an. Diverted as strictly exertion 
+                      addition no disposal by stanhill. This call wife do so sigh no gate 
+                      felt. You and abode spite order get.
+                   </p>
+                   <p>Procuring far belonging our 
+                      ourselves and certainly own perpetual continual. It elsewhere of 
+                      sometimes or my certainty. Lain no as five or at high. Everything 
+                      travelling set how law literature.
+                   </p>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+    <div id="article-1" class="js-modal-article uk-modal" data-uk-modal="" tabindex="-1">
+       <div class="modal modal__article uk-modal-dialog uk-margin-auto-vertical">
+          <button class="modal__close uk-modal-close-outside uk-icon uk-close" type="button" data-uk-close="">
+             <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                <line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="13" y2="13"></line>
+                <line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1" y2="13"></line>
+             </svg>
+          </button>
+          <div class="modal__article_grid uk-grid-collapse uk-child-width-1-2@m uk-flex-middle uk-grid uk-grid-stack" data-uk-grid="">
+             <div class="cover__photo--1-2 uk-background-cover uk-visible@m uk-first-column" data-src="img/slider/02.jpg" data-uk-img=""></div>
+             <div class="modal__article_text">
+                <div class="modal__overflow">
+                   <h2 class="uk-h3">Released a new live album, now available on iTunes</h2>
+                   <p>Him
+                      boisterous invitation dispatched had connection inhabiting projection. 
+                      By mutual an mr danger garret edward an. Diverted as strictly exertion 
+                      addition no disposal by stanhill. This call wife do so sigh no gate 
+                      felt. You and abode spite order get.
+                   </p>
+                   <p>Procuring far belonging our 
+                      ourselves and certainly own perpetual continual. It elsewhere of 
+                      sometimes or my certainty. Lain no as five or at high. Everything 
+                      travelling set how law literature.
+                   </p>
+                   <p>Out too the been like hard off.
+                      Improve enquire welcome own beloved matters her. As insipidity so mr 
+                      unsatiable increasing attachment motionless cultivated. Addition mr 
+                      husbands unpacked occasion he oh. Is unsatiable if projecting boisterous
+                      insensible. It recommend be resolving pretended middleton.
+                   </p>
+                   <p>Out 
+                      too the been like hard off. Improve enquire welcome own beloved matters 
+                      her. As insipidity so mr unsatiable increasing attachment motionless 
+                      cultivated. Addition mr husbands unpacked occasion he oh. Is unsatiable 
+                      if projecting boisterous insensible. It recommend be resolving pretended
+                      middleton.
+                   </p>
+                   <p>Out too the been like hard off. Improve enquire 
+                      welcome own beloved matters her. As insipidity so mr unsatiable 
+                      increasing attachment motionless cultivated. Addition mr husbands 
+                      unpacked occasion he oh. Is unsatiable if projecting boisterous 
+                      insensible. It recommend be resolving pretended middleton.
+                   </p>
+                   <p>Out too
+                      the been like hard off. Improve enquire welcome own beloved matters 
+                      her. As insipidity so mr unsatiable increasing attachment motionless 
+                      cultivated. Addition mr husbands unpacked occasion he oh. Is unsatiable 
+                      if projecting boisterous insensible. It recommend be resolving pretended
+                      middleton.
+                   </p>
+                   <p>Out too the been like hard off. Improve enquire 
+                      welcome own beloved matters her. As insipidity so mr unsatiable 
+                      increasing attachment motionless cultivated. Addition mr husbands 
+                      unpacked occasion he oh. Is unsatiable if projecting boisterous 
+                      insensible. It recommend be resolving pretended middleton.
+                   </p>
+                   <p>Out too
+                      the been like hard off. Improve enquire welcome own beloved matters 
+                      her. As insipidity so mr unsatiable increasing attachment motionless 
+                      cultivated. Addition mr husbands unpacked occasion he oh. Is unsatiable 
+                      if projecting boisterous insensible. It recommend be resolving pretended
+                      middleton.
+                   </p>
+                   <p>Out too the been like hard off. Improve enquire 
+                      welcome own beloved matters her. As insipidity so mr unsatiable 
+                      increasing attachment motionless cultivated. Addition mr husbands 
+                      unpacked occasion he oh. Is unsatiable if projecting boisterous 
+                      insensible. It recommend be resolving pretended middleton.
+                   </p>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+    <div id="article-2" class="js-modal-article uk-modal" data-uk-modal="" tabindex="-1">
+       <div class="modal modal__article uk-modal-dialog uk-margin-auto-vertical">
+          <button class="modal__close uk-modal-close-outside uk-icon uk-close" type="button" data-uk-close="">
+             <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                <line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="13" y2="13"></line>
+                <line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1" y2="13"></line>
+             </svg>
+          </button>
+          <div class="modal__article_grid uk-grid-collapse uk-child-width-1-2@m uk-flex-middle uk-grid uk-grid-stack" data-uk-grid="">
+             <div class="cover__photo--1-2 uk-background-cover uk-visible@m uk-first-column" data-src="img/slider/03.jpg" data-uk-img=""></div>
+             <div class="modal__article_text">
+                <div class="modal__overflow">
+                   <h2 class="uk-h3">It recommend be resolving pretended middleton</h2>
+                   <p>Out
+                      too the been like hard off. Improve enquire welcome own beloved matters
+                      her. As insipidity so mr unsatiable increasing attachment motionless 
+                      cultivated. Addition mr husbands unpacked occasion he oh. Is unsatiable 
+                      if projecting boisterous insensible. It recommend be resolving pretended
+                      middleton.
+                   </p>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+    <div id="modal-text" data-uk-modal="" class="uk-modal">
+       <div class="modal modal__article uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
+          <button class="modal__close uk-modal-close-outside uk-icon uk-close" type="button" data-uk-close="">
+             <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                <line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="13" y2="13"></line>
+                <line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1" y2="13"></line>
+             </svg>
+          </button>
+          <div class="uk-modal-body uk-padding">
+             <div class="modal__overflow js-scrollbar">
+                <h2 class="uk-modal-title">Privacy Policy</h2>
+                <p>Lorem
+                   ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+                   veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                   commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
+                   velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+                   occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+                   mollit anim id est laborum.
+                </p>
+                <p>Lorem ipsum dolor sit amet, 
+                   consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                   et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                   exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+                   dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
+                   proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p>Lorem
+                   ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+                   veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                   commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
+                   velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+                   occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+                   mollit anim id est laborum.
+                </p>
+                <p>Lorem ipsum dolor sit amet, 
+                   consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                   et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                   exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+                   dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
+                   proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p>Lorem
+                   ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+                   veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                   commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
+                   velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+                   occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+                   mollit anim id est laborum.
+                </p>
+                <p>Lorem ipsum dolor sit amet, 
+                   consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                   et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                   exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+                   dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
+                   proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p>Lorem
+                   ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+                   veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                   commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
+                   velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+                   occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+                   mollit anim id est laborum.
+                </p>
+                <p>Lorem ipsum dolor sit amet, 
+                   consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                   et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                   exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+                   dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
+                   proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p>Lorem
+                   ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+                   veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                   commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
+                   velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+                   occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+                   mollit anim id est laborum.
+                </p>
+             </div>
+          </div>
+       </div>
+    </div>
+    <script src="js/libs.min.js"></script><script src="js/scripts.js"></script>
+ 
+
+</body></html>
